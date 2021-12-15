@@ -1,10 +1,16 @@
 * {
     box-sizing: border-box;    
     margin: 0%;
+    
 }
 
 html {
     scroll-padding-top: 130px;
+}
+
+body {
+    background: rgb(145,254,249);
+    background: linear-gradient(0deg, rgba(145,254,249,1) 0%, rgba(44,189,168,1) 100%);
 }
 
 a:link {
@@ -25,7 +31,7 @@ header{
 .header-box {    
     background: rgb(145,254,249);
     background: linear-gradient(0deg, rgba(145,254,249,1) 0%, rgba(44,189,168,1) 100%);
-    border-bottom: rgb(0, 0, 0) solid 5px;
+    border-bottom: white ridge 3px;
     align-items: center;   
     margin-bottom: 0px;
     display: flex;
@@ -42,9 +48,9 @@ header{
 .header-title {
     width: 25%;
     height: 100%;
-    border-right: rgb(255, 255, 255) dashed 5px;      
+    border-right: rgb(255, 255, 255) ridge 3px;      
     position: relative;
-    right: 30px;
+    right: 15px;
     margin-bottom: 0%;
     align-items: left;
 }
@@ -67,12 +73,12 @@ header{
     margin-right: 90px;
     cursor: pointer;
     padding: 10px;
+    width: 25%;
 }
 
 .button:hover {
     color:turquoise;
     background-color: white;
-    border: white 2px solid;
     border-radius: 5px;
 }
 
@@ -85,6 +91,7 @@ header h2 {
     margin-bottom: 0%;
     padding-top: 10px;
     padding-bottom: 10px;
+    text-shadow: 2px 2px 2px rgb(77, 77, 77);
     
     
 }
@@ -125,13 +132,18 @@ header h2 {
     width: 20%;
     border-right: solid white 5px;
     padding: 5px;
+    line-height: 250%;
+    color: white;
+    font-size: 49px;
 
 }
 
 .about-me-box p {
     text-align: justify;
     width: 80%;
-    padding: 5px;
+    padding: 15px;
+    color: white;
+    font-size: 24px;
 }
 
 .section-work {
@@ -140,8 +152,7 @@ header h2 {
     display: flex;  
     flex-wrap: wrap;  
     justify-content: center;
-    background: rgb(145,254,249);
-    background: linear-gradient(0deg, rgba(145,254,249,1) 0%, rgba(44,189,168,1) 100%);
+  
    
 }
 
@@ -189,11 +200,6 @@ section h2 {
     font-size: 35px;
 }
 
-
-body {
-    background: rgb(145,254,249);
-    background: linear-gradient(0deg, rgba(145,254,249,1) 0%, rgba(44,189,168,1) 100%);
-}
 
 #resume, #about, #contact, #work {
     margin: 1px;
