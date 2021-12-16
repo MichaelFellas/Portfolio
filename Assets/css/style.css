@@ -356,6 +356,9 @@ footer img {
     .button {
         font-size: 11px;
     }
+    .section-main-card a{
+        top: -214px;
+    }
     .about-me-box h2 {
         font-size: 15px;
     }
@@ -366,7 +369,7 @@ footer img {
         margin-bottom: -100px;
     }
     .section-cards a{
-        top: -117px;
+        top: -118px;
     }
     section img {
         height: 300px;
