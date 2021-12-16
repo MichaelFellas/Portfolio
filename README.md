@@ -5,4 +5,4 @@ Change background colour to darker blue gradient,
 Move Titles over images on cards,
 Media Queries,
 Contact Me,
-Resume
+Resume.

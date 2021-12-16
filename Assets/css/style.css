@@ -1,20 +1,23 @@
 * {
     box-sizing: border-box;    
-    margin: 0%;
-    
+    margin: 0%;    
 }
 
 html {
-    scroll-padding-top: 130px;
+    scroll-padding-top: 90px;
 }
 
 body {
-    background: rgb(145,254,249);
-    background: linear-gradient(0deg, rgba(145,254,249,1) 0%, rgba(44,189,168,1) 100%);
+    background: rgb(14,61,134);
+    background: linear-gradient(0deg, rgba(14,61,134,1) 0%, rgba(0,31,80,1) 100%);
 }
 
 a:link {
     text-decoration: none;
+}
+
+#resume, #about, #contact, #work {
+    margin: 1px;
 }
 
 /*Header Section */
@@ -24,41 +27,49 @@ header{
     height: 15%;
     position: sticky;
     top: 0;
-    background: rgb(145,254,249);
-    background: linear-gradient(0deg, rgba(145,254,249,1) 0%, rgba(44,189,168,1) 100%);
+    background: rgb(14,61,134);
+    background: linear-gradient(0deg, rgba(14,61,134,1) 0%, rgba(0,31,80,1) 100%);
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.header-box {    
-    background: rgb(145,254,249);
-    background: linear-gradient(0deg, rgba(145,254,249,1) 0%, rgba(44,189,168,1) 100%);
-    border-bottom: white ridge 3px;
+.header-box {        
     align-items: center;   
     margin-bottom: 0px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 100%;
     justify-content: space-evenly;
+    height: 100%;
+    flex: 1 0; 
+    
 }
 
-.header-box-2 {
-    align-items: right;
+.header-box-2 {   
+    height: 100%;
+    flex: 3 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;   
+    padding: 5px; 
+   
 }
 
 .header-title {
-    width: 25%;
+    flex-basis: 100%;
     height: 100%;
-    border-right: rgb(255, 255, 255) ridge 3px;      
-    position: relative;
-    right: 15px;
+    border-right: rgb(255, 255, 255) ridge 3px;   
     margin-bottom: 0%;
-    align-items: left;
+    align-items: left;   
 }
 
 .header-cards{
-    width: 15%;
+    flex-basis: 21%;
     height: 100%;
-    margin: 10px; 
+    display: flex;
+    flex-wrap: wrap;  
+    align-items: center; 
 }
 
 .button {
@@ -67,13 +78,10 @@ header{
     display: inline;
     line-height: 100%;
     font-size: 35px;
-    align-items: center;
-    justify-content: center;
-    margin-left: 90px;
-    margin-right: 90px;
     cursor: pointer;
     padding: 10px;
-    width: 25%;
+    flex-basis: 90%;
+    flex: 1 0;   
 }
 
 .button:hover {
@@ -91,18 +99,37 @@ header h2 {
     margin-bottom: 0%;
     padding-top: 10px;
     padding-bottom: 10px;
-    text-shadow: 2px 2px 2px rgb(77, 77, 77);
-    
-    
+    text-shadow: 2px 2px 2px rgb(77, 77, 77);     
 }
 
+/* Images Section */
 
-/*Card Section */
-
-.nav-header img{
+.photos {
     width: 100%;
     height: 150px;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.nav-header-image-1 {    
+    flex-basis: 88%;
+    height: 150px;
+    margin: 0px;
+    border: 0%;
+    padding: 0%;
+    flex: 8 0;
+}
+
+.nav-header-image-2 {    
+    height: 150px;
+    flex-basis: 12%;
+    margin: 0%;
+    border: 0%;
+    padding: 0%;
+    flex: 1 0;   
+}
+
+/*About Me Section*/
 
 .about {
     display: flex;
@@ -114,8 +141,7 @@ header h2 {
 
 .about-me {
     border: ivory solid 3px;
-    width: 90%;
-          
+    width: 90%;          
 }
 
 .about-me-box {
@@ -123,8 +149,7 @@ header h2 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 100%;
-        
+    width: 100%;        
 }
 
 .about-me-box h2 {
@@ -135,7 +160,6 @@ header h2 {
     line-height: 250%;
     color: white;
     font-size: 49px;
-
 }
 
 .about-me-box p {
@@ -146,14 +170,18 @@ header h2 {
     font-size: 24px;
 }
 
+/*Work Section*/
+
 .section-work {
     width: 100%;
     height: 100%;
     display: flex;  
     flex-wrap: wrap;  
-    justify-content: center;
-  
-   
+    justify-content: center;   
+}
+
+.section-work a {
+    color: black;
 }
 
 .section-box {    
@@ -163,32 +191,65 @@ header h2 {
     flex-direction: row;
     width: 92%;
     justify-content: center;
-
 }
+
+/*Main Card*/
 
 .section-main-card {
     flex-grow: 1;
     flex-shrink: 0;
-    flex-basis: 96%;
-    border: 1px rgb(255, 255, 255) solid;
+    flex-basis: 96%;    
     text-align: center;
     margin: 15px;
-    background: white;
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
 }
+
+.section-main-card a {
+    flex-basis: 33%;
+    position: relative;
+    top: -98px;
+}
+
+.section-main-card p {   
+    background-color: none;   
+    font-size: 3.15em;
+    border-top: 10px black ridge;
+    border-right: 10px black ridge;
+    padding: 15px;
+    background-color: rgb(163, 153, 153);    
+}
+
+.section-main-card img {
+    height: 800px;
+}
+
+/*All other cards */
 
 .section-cards {
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: 48%;
-    border: 1px rgb(255, 255, 255) solid;
     text-align: center;
-    margin: 15px;
-    background: white;
+    margin: 15px;  
+    display: flex;  
+    flex-wrap: wrap;
 }
 
-.section-main-card img {
-    height: 900px;
+.section-cards p {   
+    background-color: none;   
+    font-size: 2.15em;
+    border-top: 10px black ridge;
+    border-right: 10px black ridge;
+    padding: 15px;
+    background-color: rgb(163, 153, 153);    
+}
+
+.section-cards a {
+    flex-basis: 33%;
+    position: relative;
+    top: -79px;
 }
 
 section img {
@@ -196,14 +257,19 @@ section img {
     width: 100%;
 }
 
+/* Contact & About Me */
+
 section h2 {
     font-size: 35px;
 }
 
+/*Footer*/
 
-#resume, #about, #contact, #work {
-    margin: 1px;
+footer img {
+    height: 300px;
 }
+
+
 
 
 
