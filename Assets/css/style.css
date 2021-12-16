@@ -31,6 +31,8 @@ header{
     background: linear-gradient(0deg, rgba(14,61,134,1) 0%, rgba(0,31,80,1) 100%);
     display: flex;
     flex-wrap: wrap;
+    z-index: 1;
+    border-bottom: white 3px ridge;
 }
 
 .header-box {        
@@ -111,8 +113,7 @@ header h2 {
     flex-wrap: wrap;
 }
 
-.nav-header-image-1 {    
-    flex-basis: 88%;
+.nav-header-image-1 {     
     height: 150px;
     margin: 0px;
     border: 0%;
@@ -121,8 +122,7 @@ header h2 {
 }
 
 .nav-header-image-2 {    
-    height: 150px;
-    flex-basis: 12%;
+    height: 150px;    
     margin: 0%;
     border: 0%;
     padding: 0%;
@@ -204,6 +204,7 @@ header h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
+    margin-bottom: -60px;
 }
 
 .section-main-card a {
@@ -230,11 +231,12 @@ header h2 {
 .section-cards {
     flex-grow: 1;
     flex-shrink: 0;
-    flex-basis: 48%;
+    flex-basis: 47%;
     text-align: center;
     margin: 15px;  
     display: flex;  
     flex-wrap: wrap;
+    margin-bottom: -60px;
 }
 
 .section-cards p {   
@@ -250,6 +252,7 @@ header h2 {
     flex-basis: 33%;
     position: relative;
     top: -79px;
+    z-index: 0;
 }
 
 section img {
@@ -266,10 +269,85 @@ section h2 {
 /*Footer*/
 
 footer img {
-    height: 300px;
+    height: 200px;
+    margin-bottom: 0%;
+    border: 0%;
+    position: relative;
+    bottom: -7px;
 }
 
+/*Media Queries*/
 
+@media screen and (max-width: 1796px) {
+    .section-main-card a {
+        top:-155px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    header h2 {
+        font-size: 35px;
+    }
+    .button {
+        font-size: 20px;
+    }
+    .photos {
+        margin-bottom: -50px;
+    }
+    .section-main-card a{
+        top: -212px;
+    }
+    .about-me-box h2 {
+        font-size: 20px;
+    }
+    .about-me-box p {
+        font-size: 16px;
+    }
+    .section-main-card {
+        margin-bottom: -190px;
+    }
+    section img {
+        height: 400px;
+    }
+    .section-main-card img {
+        height: 400px;
+    }
+    .section-cards {
+        flex-basis: 100%;
+    }
+    footer img {
+        height: 150px;
+    }
+    .nav-header-image-1 {  
+        height: 100px;  
+        flex-basis: 86%;       
+    }    
+    .nav-header-image-2 {  
+        height: 100px;  
+        flex-basis: 13%;          
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header h2 {
+        font-size: 20px;
+    }
+    .button {
+        font-size: 15px;
+    }
+    .photos {
+        margin-bottom: -100px;
+    }
+    footer img {
+        height: 100px;
+    }
+    .nav-header-image-1 {    
+        height: 50px;
+    }    
+    .nav-header-image-2 {    
+        height: 50px;   
+    }   
+}
 
 
 
