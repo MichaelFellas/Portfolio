@@ -15,11 +15,7 @@ In the assets folder you will find
 
 ## Secreenshot
 
-<<<<<<< HEAD
-![Webpage-Screenshot](./Assets/Images/Portfolio-Screenshot.jpeg)
-=======
-![Webpage-Screenshot](/Assets/Images/Portfolio-Screenshot.jpeg)
->>>>>>> f93fb87239f266db8b0e43f01931b263298d0e9c
+![Webpage-Screenshot](./Assets/Images/Portfolio-Screenshot.jpg)
 
 ## Webpage URL
 [Portfolio-URL](https://michaelfellas.github.io/Portfolio/)
